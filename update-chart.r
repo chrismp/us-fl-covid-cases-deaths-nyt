@@ -5,6 +5,8 @@ library(DatawRappr)
 
 print("Starting chart updater")
 
+fl$date <- as.Date(fl$date)
+
 updateDateFormat <- gsub(
   pattern = " 0",
   replacement = ' ',
