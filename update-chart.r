@@ -27,7 +27,7 @@ for (id in chartIDs) {
   dw_edit_chart(
     chart_id = id,
     api_key = apikey,
-    annotate = paste0("As of ",updateDateFormat,'. New deaths are the result of calculating the difference between the latest death toll and previously reported tally from the Florida Department of Health or the U.S. Center for Disease Control and Prevention, whichever is higher.')
+    annotate = paste0("As of ",updateDateFormat,'. Daily estimates are calculted based on numbers reported weekly by Florida\'s health department and daily by the U.S. Centers for Disease Control and Prevention.')
   )
   print("Publishing chart")  
   dw_publish_chart(
